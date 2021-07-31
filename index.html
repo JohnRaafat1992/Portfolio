@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Portfolio </title
+    <!-- Render ALl Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <!-- Font Awesome Libarary  -->
+    <link rel="stylesheet" href="css/all.min.css"/>
+    <!-- Main Template css FIle-->
+    <link rel="stylesheet" href="Portfolio.css"/>
+    <!-- google font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" >
+</head>
+<body>
+  <!-- Start setting box -->
+  <div class="setting-box">
+    <div class="toggle-setting">
+      <i class="fas fa-cog "></i>
+    </div>
+    <div class="option-list">USER OPTION LIST</div>
+    <div class="setting-container"> 
+      <div class="option-box">
+          <h4>Colors</h4>
+          <ul class="colors-list">
+            <li class="active" data-color="#ff9800"></li>
+            <li data-color="#e91e63"></li>
+            <li data-color="#006588"></li>
+            <li data-color="#03a9f4"></li>
+            <li data-color="#4caf50"></li>
+          </ul>
+      </div>
+      <button class="reset-options">Reset Options</button>
+    </div>
+  </div>
+  <!-- End setting box -->
+    <!-- Start landing page  -->
+    <div class="landing active" id="landing">
+    <div class="landing-page">
+      <div class="container">
+        <div class="fix">
+        <ul class="links" id="links">
+          <li><a href="#" class="landing2" onclick="addActive()" data-section=".landing">HOME</a></li>
+           <li><a href="#about" class="about2" onclick="addActive2()"  id="about10" data-section=".about">ABOUT</a></li>
+          <li><a href="#projects" class="projects2" onclick="addActive3()" id="projects10" data-section=".projects">PROJECTS</a></li>
+          <li><a href="#skills" class="skills2" onclick="addActive4()" id="skills10" data-section=".skills">SKILLS</a></li>
+         <a href="John Raafat CV .pdf" target="_blank">Resume</a>
+          <li><a href="#contact" class="contact2" onclick="addActive5()" id="contact10" data-section=".contact">CONTACT</a></li>
+              <div class="icons-di">
+          <a class="icons" href="https://www.facebook.com/johnraafa/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="icons" href="https://www.instagram.com/johneljoker/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="icons" href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icons" href="https://github.com/JohnRaafat1992" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+        </div>
+        </ul>
+        
+        <div class="header-area">
+        <div class="links-container">
+          <div class="john-photo">
+            <img src="john.png" alt="">
+            <h5>John Raafat</h5>
+            <p>Front-end Developer</p>
+          </div>
+        <button class="toggle-menu open" id="toggle-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </div>
+      </div>
+      <div class="introduction-text">
+        <div class="info-name">
+          <h1>Hello!</h1>
+        <P>My name is<br> <span> JOHN RAAFAT </span><br> 
+         <br> I'm a Front-end Developer working remotely , living in Belarus!  </P>
+        </div>
+        <img src="27.jpg" alt=""> 
+      </div>
+      </div>
+    </div>
+    </div>
+    <!-- End landing page  -->
+    <!-- Start about us -->
+    <div class="about" id="about">
+        <div class="landing-page">
+      <div class="container">
+        <div class="fix">
+        <ul class="links open" id="links2">
+          <li><a href="#" class="landing2" onclick="addActive()" data-section=".landing">HOME</a></li>
+           <li><a href="#about" class="about2" onclick="addActive2()"  id="about10" data-section=".about">ABOUT</a></li>
+          <li><a href="#projects" class="projects2" onclick="addActive3()" id="projects10" data-section=".projects">PROJECTS</a></li>
+          <li><a href="#skills" class="skills2" onclick="addActive4()" id="skills10" data-section=".skills">SKILLS</a></li>
+         <a href="John Raafat CV .pdf" target="_blank">Resume</a>
+          <li><a href="#contact" class="contact2" onclick="addActive5()" id="contact10" data-section=".contact">CONTACT</a></li>
+          <div class="icons-di">
+              <a class="icons" href="https://www.facebook.com/johnraafa/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="icons" href="https://www.instagram.com/johneljoker/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="icons" href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icons" href="https://github.com/JohnRaafat1992" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+              </div>
+        </ul>
+        <div class="header-area">
+        <div class="links-container">
+          <div class="john-photo">
+            <img src="john.png" alt="">
+            <h5>John Raafat</h5>
+            <p>Front-end Developer</p>
+          </div>
+        <button class="toggle-menu" id="toggle-menu2">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </div>
+      </div>
+      <div class="about-text">
+        <div class="image">
+          <h5 class="about-me">About Me</h5>
+    <img src="third.jpg" alt="">
+    </div>
+    <div class="about-para">
+      <p>
+      &nbsp; &nbsp; &nbsp; My name is<span> John Raafat </span>, I’m a Frontend Developer currently working remotely! I've spent the last 2 years as a professional web developer where I specialize in transforming beautiful designs into full-fledged interactive web applications for various clients all around the world.
+      <br>
+      Before starting frontend developer I was working as a senior document control in two of the most reputational construction companies in Egypt, " Orascom Construction and ASGC "
+      <br>
+      My job involves doing what I love, <span>developing</span> new websites and applications. I absolutely love learning new things and taking on new challenges. A more detailed look at my professional capabilities and experience is available in my <a href="John Raafat CV .pdf" target="_blank">Resume.</a>
+      <br>
+      I just relocated from Cairo, Egypt to Vitebsk, Belarus in February of 2021!
+      <br>
+      <blockquote>"Success consists of going from failure to failure without loss of enthusiasm." —Winston Churchill</blockquote>
+      <br>
+    </p>
+    <div class="stars">★ ★ ★ ★ ★</div>
+    </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!-- End about us -->
+      <!-- Start Projects -->
+    <div class="projects" id="projects">
+        <div class="landing-page">
+      <div class="container">
+        <div class="fix">
+        <ul class="links" id="links3" >
+          <li><a href="#" class="landing2" onclick="addActive()" data-section=".landing">HOME</a></li>
+          <li><a href="#about" class="about2" onclick="addActive2()"  id="about10" data-section=".about">ABOUT</a></li>
+          <li><a href="#projects" class="projects2" onclick="addActive3()" id="projects10" data-section=".projects">PROJECTS</a></li>
+          <li><a href="#skills" class="skills2" onclick="addActive4()" id="skills10" data-section=".skills">SKILLS</a></li>
+          <a href="John Raafat CV .pdf" target="_blank">Resume</a>
+          <li><a href="#contact" class="contact2" onclick="addActive5()" id="contact10" data-section=".contact">CONTACT</a></li>
+          <div class="icons-di">
+              <a class="icons" href="https://www.facebook.com/johnraafa/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="icons" href="https://www.instagram.com/johneljoker/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="icons" href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icons" href="https://github.com/JohnRaafat1992" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+          </div>
+        </ul>
+        <div class="header-area">
+        <div class="links-container">
+          <div class="john-photo">
+            <img src="john.png" alt="">
+            <h5>John Raafat</h5>
+            <p>Front-end Developer</p>
+          </div>
+        <button class="toggle-menu" id="toggle-menu3">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </div>
+      </div>
+      <div class="projects-text">
+         
+        <div class="text">
+         
+  <h6 class="my-projects">Projects</h6>
+  </div>
+    <div class="project1">
+		<div class="number"> 01 </div>
+       <h4 class="fill" data-text="EgyMassage"> EgyMassage </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/Egy-Massage/" class="link" data-text=	"Press Here" target="_blank">
+      
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> 
+      I have built this website of the Massage Salon In Moscow Russia . <br>
+       created it with pure HTML, CSS, Javascript . 
+    </p>
+	</div>
+  <div class="project1">
+		<div class="number"> 02 </div>
+       <h4 class="fill" data-text="SpecialMassage"> SpecialMassage </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/Special-Massage/" class="link" data-text=	"Press Here" target="_blank">
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> I have built this website of the Massage Salon In Vitebsk Belarus. .<br>
+      created it with pure HTML, CSS, Javascript .</p>
+	</div>
+  <div class="project1">
+		<div class="number"> 03 </div>
+       <h4 class="fill" data-text="HangManGame"> HangManGame </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/Hang-Man-Game/" class="link" data-text=	"Press Here" target="_blank">
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> I have built this Game For myself to Check my skills.<br>
+      created it with pure HTML, CSS, Javascript .</p>
+	</div>
+  <div class="project1">
+		<div class="number"> 04 </div>
+       <h4 class="fill" data-text="LeonAgency"> LeonAgency </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/New-Tamplate-10/" class="link" data-text=	"Press Here" target="_blank">
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> I have built this website as a quick test for exwork .<br>
+      created it with only pure HTML, CSS . </p>
+	</div>
+       <div class="project1">
+		<div class="number"> 05 </div>
+       <h4 class="fill" data-text="MemoryGame"> MemoryGame </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/Memory_Game/" class="link" data-text=	"Press Here" target="_blank">
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> I have built this Game For myself to Check my skills.<br>
+      created it with pure HTML, CSS, Javascript .</p>
+	</div>
+   <div class="project1">
+		<div class="number"> 06 </div>
+       <h4 class="fill" data-text="RevelationPage"> RevelationPage </h4>
+		<div class="john">
+		<a href="https://johnraafat1992.github.io/Tamplate-Number-2/" class="link" data-text=	"Press Here" target="_blank">
+		<span>View Website <i class="fas fa-external-link-alt"></i></span>
+		</a>
+	</div>
+		<p> I have built this website as a quick test for exwork .<br>
+      created it with only pure HTML, CSS . </p>
+	</div>
+      </div>
+    </div>
+    </div>
+  </div>
+    <!-- End Projects -->
+    <!-- start Skills -->
+        <div class="skills" id="skills">
+        <div class="landing-page">
+      <div class="container">
+        <div class="fix">
+        <ul class="links" id="links4">
+          <li><a href="#" class="landing2" onclick="addActive()" data-section=".landing">HOME</a></li>
+           <li><a href="#about" class="about2" onclick="addActive2()"  id="about10" data-section=".about">ABOUT</a></li>
+          <li><a href="#projects" class="projects2" onclick="addActive3()" id="projects10" data-section=".projects">PROJECTS</a></li>
+          <li><a href="#skills" class="skills2" onclick="addActive4()" id="skills10" data-section=".skills">SKILLS</a></li>
+         <a href="John Raafat CV .pdf" target="_blank">Resume</a>
+          <li><a href="#contact" class="contact2" onclick="addActive5()" id="contact10" data-section=".contact">CONTACT</a></li>
+          <div class="icons-di">
+              <a class="icons" href="https://www.facebook.com/johnraafa/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="icons" href="https://www.instagram.com/johneljoker/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="icons" href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icons" href="https://github.com/JohnRaafat1992" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+          </div>
+        </ul>
+        <div class="header-area">
+        <div class="links-container">
+          <div class="john-photo">
+            <img src="john.png" alt="">
+            <h5>John Raafat</h5>
+            <p>Front-end Developer</p>
+          </div>
+        <button class="toggle-menu" id="toggle-menu4">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </div>
+      </div>
+      <div class="about-text">
+        <div class="image">
+          <h5 class="about-me">My Skills</h5>
+    <img src="4.jpg" alt="">
+    </div>
+     <div class="html">
+       <i class="fab fa-html5"></i>
+       <h1>HTML </h1>
+       <h2>About my Abilities with HTML and HTML5 : </h2>
+       <p>To explain all My Abilities with HTML, we will need a lot of words and pages, so I will try to be as brief as possible My knowledge of HTML and HTML5 is Perfect and I am familiar with every little, big thing, some of these Abilities are:
+<ul>
+  <li>Working with HTML line breaks.</li>
+  <li>line control.</li>
+  <li>Use selection to highlight text.</li>
+  <li>using titles.</li>
+  <li>quotes and quotes.</li>
+  <li>List types.</li>
+  <li>Text direction control.</li>
+  <li>word break suggestion.</li>
+</ul></p>
+     </div>
+          <div class="html">
+       <i class="fab fa-css3-alt" ></i>
+       <h1>CSS </h1>
+       <h2>About my Abilities with CSS and CSS3 : </h2>
+       <p>
+        My knowledge of CSS and CSS3 is perfect and I am familiar with every little, big thing, some and the most important of these Abilities are:
+<ul>
+  <li>Elements Style.</li>
+  <li>Awesome CSS.</li>
+  <li>Shadow Generator.</li>
+  <li>Hover.</li>
+  <li>Grid Generator.</li>
+  <li>FlexBox Generator.</li>
+  <li>Border Generator.</li>
+  <li>Gradients Generator.</li>
+  <li>2D transform .</li>
+  <li>3D transform.</li>
+  <li>Transition.</li>
+  <li>Animation.</li>
+  <li>Selectors.</li>
+  <li>Media Queries.</li>
+</ul></p>
+     </div>
+          <div class="html">
+       <img src="js logo.png" alt="">
+       <h1>JAVASCRIPT</h1>
+       <h2>About my Abilities with JavaScript : </h2>
+       <p> JavaScript is a huge world. I can say that My knowledge of Javascript is very good, Some and the most important of these Abilities are:
+<ul>
+  <li> Syntax.</li>
+  <li>Variables.</li>
+  <li>Operators.</li>
+  <li>Logical Operator.</li>
+  <li>Events.</li>
+  <li>Array Methods.</li>
+  <li>String Methods.</li>
+  <li>Loop.</li>
+  <li>Math.</li>
+  <li>Regular Expression.</li>
+  <li>Methods ( Date - Numbers ).</li>
+</ul></p>
+     </div>
+        <div class="html">
+       <img src="jsbom.png" alt="">
+       <h1>JS BOM</h1>
+       <h2>About my Abilities with JavaScript Bom : </h2>
+<p>
+  Browser Object Model is a browser API that allows JavaScript to communicate with the browser. It is not a big world, so I can say that I mastered it very well, some and the most important of these abilities are:
+<ul>
+  <li>widow Bom .</li>
+  <li>widow Methods.</li>
+  <li>window Properties .</li>
+  <li>Location Properties .</li>
+  <li>Location Methods .</li>
+  <li>History Methods .</li>
+  <li>Window Navigator .</li>
+  <li>Screen Properties .</li>
+  <li>Cookies .</li> 
+</ul></p>
+     </div>
+     <div class="html">
+       <img src="jsdom.png" alt="">
+       <h1>JS DOM</h1>
+       <h2>About my Abilities with JavaScript Dom : </h2>
+       <p>Document object model is the data representation of the objects that make up the structure and content of a document on the web, I can say that I have mastered it well, some and the most important of these abilities are:
+<ul>
+  <li>Controlling Construction and Styling of Page By Javascript Dom .</li>
+  <li>Get and Set Elements .</li>
+  <li>Get and Set Attributes.</li>
+  <li>Elements class list .</li>
+  <li>Child Node.</li>
+  <li>Clone Node .</li>
+  <li>Parent Element .</li>
+  <li>Event Listener .</li>
+  <li>Events .</li>
+  <li>Document Inputencoding.</li>
+  <li>Create Elements.</li>
+  <li>Create Attributes .</li>
+</ul></p>
+     </div>
+     <div class="html">
+       <img src="ES6.png" alt="">
+       <h1>ECMASCRIPT 6</h1>
+       <h2>About my Abilities  with ECMAscript 6 : </h2>
+       <p>ES6 is an important language update, the first language update since ES5 was standardized in 2009, Studying of it made me more proficient and skilled in JavaScript in general
+I can say that I am good with ES6, some and the most important of these abilities are::
+<ul>
+  <li>Let KeyWord.</li>
+  <li>Const Keyword.</li>
+  <li> Destruct Values.</li>
+  <li> Arguments  Values.</li>
+  <li>Enhanced Object Literals..</li>
+  <li>Spread Perator.</li>
+  <li>Class Keyword.</li>
+  <li>Arrow Function.</li>
+  <li>For Of Loop.</li>
+  <li>JavaScript Generator.</li>
+  <li>Set Object.</li>
+  <li>Map object.</li>
+  <li>Module.</li>
+  <li>Promises.</li>
+  <li>New Array Methods.</li>
+  <li>New String Methods.</li>
+  <li>Custom Iterable Object.</li>
+</ul></p>
+     </div> 
+      </div>
+
+      </div>
+    </div>
+  </div>
+    <!-- End Skills -->
+    <!-- start contact -->
+    <div class="contact" id="contact">
+        <div class="landing-page">
+      <div class="container">
+        <div class="fix">
+        <ul class="links" id="links5">
+          <li><a href="#" class="landing2" onclick="addActive()" data-section=".landing">HOME</a></li>
+           <li><a href="#about" class="about2" onclick="addActive2()"  id="about10" data-section=".about">ABOUT</a></li>
+          <li><a href="#projects" class="projects2" onclick="addActive3()" id="projects10" data-section=".projects">PROJECTS</a></li>
+          <li><a href="#skills" class="skills2" onclick="addActive4()" id="skills10" data-section=".skills">SKILLS</a></li>
+         <a href="John Raafat CV .pdf" target="_blank">Resume</a>
+<li><a href="#contact" class="contact2" onclick="addActive5()" id="contact10" data-section=".contact">CONTACT</a></li>
+<div class="icons-di">
+              <a class="icons" href="https://www.facebook.com/johnraafa/" target="_blank">
+                <i class="fab fa-facebook"></i>
+              </a>
+              <a class="icons" href="https://www.instagram.com/johneljoker/" target="_blank">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a class="icons" href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+                <i class="fab fa-linkedin"></i>
+              </a>
+              <a class="icons" href="https://github.com/JohnRaafat1992" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+        </ul>
+        <div class="header-area">
+        <div class="links-container">
+          <div class="john-photo">
+            <img src="john.png" alt="">
+            <h5>John Raafat</h5>
+            <p>Front-end Developer</p>
+          </div>
+        <button class="toggle-menu" id="toggle-menu5">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        </div>
+      </div>
+      </div>
+      <div class="about-text">
+        <div class="image">
+    <img src="contact.jpg" alt="">
+    </div>
+    <div class="about-para">
+     <h4 class="contact-me">If you’d like to chat about a project please send me massage and I’ll get back within 1-2 days.</h4>
+     <div class="inmate">
+       <a href="https://www.linkedin.com/in/john-raafat-71010713b?fbclid=IwAR3_FHgnB7jzXNX7mLzZ49K1h9MJt9fpOWAhcIlOSaTTB6J0pWtomBDZYzc" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    </a>
+     </div>
+     <div class="inmate1">
+       <a href="https://www.instagram.com/johneljoker/" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+     </div>
+          <div class="inmate2">
+       <a href="https://github.com/JohnRaafat1992" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+     </div>
+     <div class="inmate3">
+       <a href="https://www.facebook.com/johnraafa/" target="_blank">
+      <i class="fab fa-facebook"></i>
+    </a>
+     </div>
+     <div class="whatsapp">
+        <a href="https://api.whatsapp.com/send/?phone=0201222830065&text&app_absent=0&lang=ar" target="_blank">
+       <i class="fab fa-whatsapp"></i> </a>
+       <p> My Whatsapp Number Is : +201222830065 </p>
+     </div>
+     <div class="Skype">
+        <a href="https://join.skype.com/invite/K5C2LwTmnda2" target="_blank">
+       <i class="fab fa-skype"></i> </a>
+       <p> My Skype Number Is : +375336820142 </p>
+     </div>
+     <div class="Email">
+        <a href="https://api.whatsapp.com/send/?phone=0201222830065&text&app_absent=0&lang=ar" target="_blank">
+       <i class="fas fa-envelope-square"></i> </a> 
+       <p>My Mail Is : johnraafat1992@gmail.com </p> 
+     </div>
+      </div>
+      </div>
+    </div>
+  </div>
+    <!-- end contact -->
+  <script src="Portfolio.js"></script>
+</body>
+</html>
